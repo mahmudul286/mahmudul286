@@ -300,10 +300,31 @@ Python • NLP • Flask • React
 
 <br/>
 
-<div data-importer="stats" align="center">
-   <img src="https://raw.githubusercontent.com/mahmudul286/mahmudul286/stats-output/stats.svg?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  />
-  &nbsp;
-   <img src="https://raw.githubusercontent.com/mahmudul286/mahmudul286/stats-output/stats.svg?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  />
+<div align="center">
+
+  <img
+    src="https://github-readme-stats.shion.dev/api?username=mahmudul286&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true"
+    height="170"
+    alt="GitHub Stats"
+  />
+
+  <img
+    src="https://github-readme-stats.shion.dev/api/top-langs/?username=mahmudul286&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"
+    height="170"
+    alt="Top Languages"
+  />
+
+</div>
+
+<br/>
+
+<div align="center">
+
+  <img
+    src="https://streak-stats.demolab.com?user=mahmudul286&theme=tokyonight&hide_border=true"
+    alt="GitHub Streak"
+  />
+
 </div>
 
 <br/>

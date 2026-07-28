@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="100%" height="auto" role="img" aria-label="Floating particles">
+  <defs>
+    <radialGradient id="pCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7B2FF7" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#7B2FF7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pMagenta" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF2D75" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FF2D75" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pWhite" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <g>
+    <circle cx="80" cy="60" r="3" fill="url(#pCyan)">
+      <animate attributeName="cy" values="60;30;60" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="120" r="2.5" fill="url(#pPurple)">
+      <animate attributeName="cy" values="120;90;120" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="50" r="2" fill="url(#pWhite)">
+      <animate attributeName="cy" values="50;25;50" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="480" cy="150" r="3" fill="url(#pCyan)">
+      <animate attributeName="cy" values="150;120;150" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="620" cy="80" r="2" fill="url(#pMagenta)">
+      <animate attributeName="cy" values="80;55;80" dur="6.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="6.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="130" r="2.5" fill="url(#pPurple)">
+      <animate attributeName="cy" values="130;100;130" dur="7.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="7.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="920" cy="50" r="2" fill="url(#pCyan)">
+      <animate attributeName="cy" values="50;25;50" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="140" r="3" fill="url(#pWhite)">
+      <animate attributeName="cy" values="140;110;140" dur="6.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="6.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="170" r="1.5" fill="url(#pCyan)">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="100" r="1.5" fill="url(#pMagenta)">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="420" cy="30" r="1.5" fill="url(#pPurple)">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="560" cy="170" r="1.5" fill="url(#pCyan)">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="40" r="1.5" fill="url(#pWhite)">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="4.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="850" cy="170" r="1.5" fill="url(#pMagenta)">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="4.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="80" r="1.5" fill="url(#pPurple)">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="5.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

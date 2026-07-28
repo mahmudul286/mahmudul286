@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="auto" role="img" aria-label="Animated neural network">
+  <defs>
+    <linearGradient id="nn2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0E27"/>
+      <stop offset="100%" stop-color="#050816"/>
+    </linearGradient>
+    <radialGradient id="nn2Glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#7B2FF7" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#00D4FF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nn2nCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nn2nPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#7B2FF7"/>
+      <stop offset="100%" stop-color="#7B2FF7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nn2nMagenta" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#FF2D75"/>
+      <stop offset="100%" stop-color="#FF2D75" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nn2Edge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#7B2FF7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FF2D75" stop-opacity="0.15"/>
+    </linearGradient>
+    <filter id="nn2Blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="nn2EdgeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#nn2Bg)"/>
+  <rect width="1200" height="360" fill="url(#nn2Glow)"/>
+
+  <!-- grid lines (very subtle) -->
+  <g opacity="0.05" stroke="#00D4FF" stroke-width="0.5">
+    <line x1="0" y1="60"  x2="1200" y2="60"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="200"  y1="0" x2="200"  y2="360"/>
+    <line x1="600"  y1="0" x2="600"  y2="360"/>
+    <line x1="1000" y1="0" x2="1000" y2="360"/>
+  </g>
+
+  <!-- Glowing edges (with pulse animation) -->
+  <g stroke="url(#nn2Edge)" stroke-width="0.8" fill="none" filter="url(#nn2EdgeGlow)">
+    <!-- input(3) @ x=180 to hidden1(5) @ x=500 -->
+    <line x1="180" y1="80"  x2="500" y2="60"  opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="180" y1="80"  x2="500" y2="180" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.5s" begin="0.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="180" y1="80"  x2="500" y2="300" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.8s" begin="0.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="180" y1="180" x2="500" y2="60"  opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.3s" begin="0.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="180" y1="180" x2="500" y2="180" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.6s" begin="0.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="180" y1="180" x2="500" y2="300" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.9s" begin="1.0s" repeatCount="indefinite"/>
+    </line>
+    <line x1="180" y1="280" x2="500" y2="60"  opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.4s" begin="0.3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="180" y1="280" x2="500" y2="180" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.7s" begin="0.7s" repeatCount="indefinite"/>
+    </line>
+    <line x1="180" y1="280" x2="500" y2="300" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4.0s" begin="1.1s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- hidden1(5) @ x=500 to hidden2(4) @ x=820 -->
+    <line x1="500" y1="60"  x2="820" y2="90"  opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="500" y1="60"  x2="820" y2="250" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.8s" begin="0.9s" repeatCount="indefinite"/>
+    </line>
+    <line x1="500" y1="180" x2="820" y2="90"  opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.6s" begin="0.7s" repeatCount="indefinite"/>
+    </line>
+    <line x1="500" y1="180" x2="820" y2="170" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.9s" begin="1.1s" repeatCount="indefinite"/>
+    </line>
+    <line x1="500" y1="180" x2="820" y2="250" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.4s" begin="0.3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="500" y1="180" x2="820" y2="330" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.7s" begin="0.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="500" y1="300" x2="820" y2="170" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.5s" begin="1.0s" repeatCount="indefinite"/>
+    </line>
+    <line x1="500" y1="300" x2="820" y2="330" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.8s" begin="1.3s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- hidden2(4) @ x=820 to output(3) @ x=1080 -->
+    <line x1="820" y1="90"  x2="1080" y2="120" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.6s" begin="0.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="820" y1="90"  x2="1080" y2="280" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.9s" begin="1.0s" repeatCount="indefinite"/>
+    </line>
+    <line x1="820" y1="170" x2="1080" y2="120" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.7s" begin="0.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="820" y1="170" x2="1080" y2="200" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.5s" begin="0.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="820" y1="250" x2="1080" y2="200" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.8s" begin="1.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="820" y1="250" x2="1080" y2="280" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.6s" begin="0.9s" repeatCount="indefinite"/>
+    </line>
+    <line x1="820" y1="330" x2="1080" yysize="200" y2="200" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.4s" begin="0.7s" repeatCount="indefinite"/>
+    </line>
+    <line x1="820" y1="330" x2="1080" y2="280" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.7s" begin="1.1s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Traveling data packets (small bright circles along select edges) -->
+  <g filter="url(#nn2Blur)">
+    <circle r="2.2" fill="#00D4FF">
+      <animateMotion dur="3.2s" repeatCount="indefinite" path="M180,80 L500,180"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" fill="#7B2FF7">
+      <animateMotion dur="3.8s" begin="0.4s" repeatCount="indefinite" path="M180,180 L500,60"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.8s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" fill="#FF2D75">
+      <animateMotion dur="4.2s" begin="0.9s" repeatCount="indefinite" path="M180,280 L500,300"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="4.2s" begin="0.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" fill="#00D4FF">
+      <animateMotion dur="3.5s" begin="0.6s" repeatCount="indefinite" path="M500,180 L820,90"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.5s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" fill="#7B2FF7">
+      <animateMotion dur="4.0s" begin="1.1s" repeatCount="indefinite" path="M500,300 L820,250"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="4.0s" begin="1.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" fill="#00D4FF">
+      <animateMotion dur="3.3s" begin="1.4s" repeatCount="indefinite" path="M820,170 L1080,200"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.3s" begin="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" fill="#FF2D75">
+      <animateMotion dur="3.7s" begin="0.7s" repeatCount="indefinite" path="M820,250 L1080,120"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.7s" begin="0.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" fill="#7B2FF7">
+      <animateMotion dur="3.9s" begin="2.0s" repeatCount="indefinite" path="M820,330 L1080,280"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.9s" begin="2.0s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Nodes (pulsing) -->
+  <g filter="url(#nn2Blur)">
+    <!-- Input layer -->
+    <circle cx="180" cy="80"  r="9" fill="url(#nn2nCyan)">
+      <animate attributeName="r" values="9;11;9" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="180" r="9" fill="url(#nn2nCyan)">
+      <animate attributeName="r" values="9;11;9" dur="2.4s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="280" r="9" fill="url(#nn2nCyan)">
+      <animate attributeName="r" values="9;11;9" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Hidden layer 1 -->
+    <circle cx="500" cy="60"  r="8" fill="url(#nn2nPurple)">
+      <animate attributeName="r" values="8;10;8" dur="2.6s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="180" r="8" fill="url(#nn2nPurple)">
+      <animate attributeName="r" values="8;10;8" dur="2.6s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="300" r="8" fill="url(#nn2nPurple)">
+      <animate attributeName="r" values="8;10;8" dur="2.6s" begin="1.0s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Hidden layer 2 -->
+    <circle cx="820" cy="90"  r="8" fill="url(#nn2nPurple)">
+      <animate attributeName="r" values="8;10;8" dur="2.8s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="820" cy="170" r="8" fill="url(#nn2nPurple)">
+      <animate attributeName="r" values="8;10;8" dur="2.8s" begin="0.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="820" cy="250" r="8" fill="url(#nn2nPurple)">
+      <animate attributeName="r" values="8;10;8" dur="2.8s" begin="1.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="820" cy="330" r="8" fill="url(#nn2nPurple)">
+      <animate attributeName="r" values="8;10;8" dur="2.8s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Output layer -->
+    <circle cx="1080" cy="120" r="9" fill="url(#nn2nMagenta)">
+      <animate attributeName="r" values="9;11;9" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="200" r="9" fill="url(#nn2nMagenta)">
+      <animate attributeName="r" values="9;11;9" dur="2.2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="280" r="9" fill="url(#nn2nMagenta)">
+      <animate attributeName="r" values="9;11;9" dur="2.2s" begin="1.0s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Corner labels -->
+  <text x="32" y="34" font-family="JetBrains Mono, monospace" font-size="11" fill="#8892B0" opacity="0.7">
+    neural_net.live
+  </text>
+  <text x="1168" y="338" font-family="JetBrains Mono, monospace" font-size="11" fill="#8892B0" opacity="0.7" text-anchor="end">
+    forward_pass · 3-3-4-3
+  </text>
+
+  <!-- Layer labels (bottom) -->
+  <text x="180"  y="345" font-family="JetBrains Mono, monospace" font-size="9" fill="#00D4FF"  opacity="0.6" text-anchor="middle">INPUT</text>
+  <text x="500"  y="345" font-family="JetBrains Mono, monospace" font-size="9" fill="#7B2FF7" opacity="0.6" text-anchor="middle">HIDDEN_01</text>
+  <text x="820"  y="345" font-family="JetBrains Mono, monospace" font-size="9" fill="#7B2FF7" opacity="0.6" text-anchor="middle">HIDDEN_02</text>
+  <text x="1080" y="345" font-family="JetBrains Mono, monospace" font-size="9" fill="#FF2D75" opacity="0.6" text-anchor="middle">OUTPUT</text>
+</svg>

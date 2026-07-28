@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 24" width="100%" height="auto" role="img" aria-label="Section divider">
+  <defs>
+    <linearGradient id="ddLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#00D4FF" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#7B2FF7" stop-opacity="0.85"/>
+      <stop offset="80%" stop-color="#FF2D75" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FF2D75" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="ddNode" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#7B2FF7"/>
+      <stop offset="100%" stop-color="#7B2FF7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="ddGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="40" y="11" width="920" height="1" fill="url(#ddLine)"/>
+
+  <!-- small endpoint dots -->
+  <circle cx="40"  cy="12" r="1.4" fill="#00D4FF" opacity="0.6"/>
+  <circle cx="960" cy="12" r="1.4" fill="#FF2D75" opacity="0.6"/>
+
+  <!-- traveling data packet (left -> right) -->
+  <circle r="2.2" fill="#FFFFFF" filter="url(#ddGlow)">
+    <animate attributeName="cx" from="40" to="960" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="12;10;14;12" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- traveling data packet (right -> left, offset timing, different color) -->
+  <circle r="1.8" fill="#00D4FF" filter="url(#ddGlow)">
+    <animate attributeName="cx" from="960" to="40" dur="7.5s" begin="1.2s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="12;14;10;12" dur="7.5s" begin="1.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="7.5s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- center pulse node -->
+  <g filter="url(#ddGlow)">
+    <circle cx="500" cy="12" r="3" fill="url(#ddNode)">
+      <animate attributeName="r" values="3;4.6;3" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- center accent ticks -->
+  <line x1="468" y1="12" x2="483" y2="12" stroke="#00D4FF" stroke-width="0.5" opacity="0.45"/>
+  <line x1="517" y1="12" x2="532" y2="12" stroke="#FF2D75" stroke-width="0.5" opacity="0.45"/>
+</svg>

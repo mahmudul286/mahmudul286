@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="auto" role="img" aria-label="Lip Reading AI thumbnail">
+  <defs>
+    <linearGradient id="bg-LipReadingAI" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0E27"/>
+      <stop offset="100%" stop-color="#050816"/>
+    </linearGradient>
+    <radialGradient id="glow-LipReadingAI" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#FF2D75" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent-LipReadingAI" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF2D75" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FF2D75" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur-LipReadingAI" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg-LipReadingAI)"/>
+  <rect width="800" height="450" fill="url(#glow-LipReadingAI)"/>
+
+  <!-- top animated accent bar -->
+  <rect x="0" y="0" width="800" height="2" fill="url(#accent-LipReadingAI)">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- subtle grid -->
+  <g opacity="0.04" stroke="#00D4FF" stroke-width="0.5">
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+  </g>
+
+  <!-- floating particles -->
+  <g filter="url(#blur-LipReadingAI)">
+    <circle cx="120" cy="80" r="1.5" fill="#00D4FF">
+      <animate attributeName="cy" values="80;65;80" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="680" cy="120" r="1.5" fill="#7B2FF7">
+      <animate attributeName="cy" values="120;140;120" dur="7s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="7s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="370" r="1.5" fill="#FF2D75">
+      <animate attributeName="cy" values="370;350;370" dur="5.5s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="5.5s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="380" r="1.5" fill="#00D4FF">
+      <animate attributeName="cy" values="380;395;380" dur="6.5s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="6.5s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- center icon (project-specific path) -->
+  <g transform="translate(400,180)" filter="url(#blur-LipReadingAI)">
+    
+<g fill="none" stroke="#FF2D75" stroke-width="2" stroke-linecap="round">
+  <!-- lips outline -->
+  <path d="M-40,0 C-30,-12 -10,-12 0,-4 C10,-12 30,-12 40,0 C30,12 10,16 0,8 C-10,16 -30,12 -40,0 Z"/>
+  <line x1="0" y1="-4" x2="0" y2="8" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="-25" cy="-2" r="1.5" fill="#00D4FF">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="25" cy="-2" r="1.5" fill="#7B2FF7">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+  </g>
+
+  <!-- project name -->
+  <text x="400" y="295" font-family="JetBrains Mono, monospace" font-size="32" font-weight="700"
+        fill="#FFFFFF" text-anchor="middle" letter-spacing="1">Lip Reading AI</text>
+
+  <!-- tagline -->
+  <text x="400" y="325" font-family="JetBrains Mono, monospace" font-size="14"
+        fill="#FF2D75" text-anchor="middle" opacity="0.85" letter-spacing="2">BENGALI LIP READING SYSTEM</text>
+
+  <!-- bottom corner labels -->
+  <text x="32" y="425" font-family="JetBrains Mono, monospace" font-size="10" fill="#8892B0" opacity="0.5">
+    project.preview
+  </text>
+  <text x="768" y="425" font-family="JetBrains Mono, monospace" font-size="10" fill="#8892B0" opacity="0.5" text-anchor="end">
+    live
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+  </text>
+</svg>

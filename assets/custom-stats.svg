@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 240" width="100%" height="auto" role="img" aria-label="GitHub stats dashboard">
+  <defs>
+    <linearGradient id="csBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0E27"/>
+      <stop offset="100%" stop-color="#050816"/>
+    </linearGradient>
+    <linearGradient id="csAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#7B2FF7"/>
+    </linearGradient>
+    <radialGradient id="csGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7B2FF7" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="csBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1100" height="240" rx="14" fill="url(#csBg)" stroke="#7B2FF7" stroke-width="0.5" stroke-opacity="0.3"/>
+  <rect width="1100" height="240" rx="14" fill="url(#csGlow)"/>
+
+  <!-- top accent bar -->
+  <rect x="20" y="20" width="1060" height="1" fill="url(#csAccent)" opacity="0.4"/>
+
+  <!-- title -->
+  <text x="40" y="50" font-family="JetBrains Mono, monospace" font-size="12" fill="#8892B0" letter-spacing="2">
+    GITHUB · STATS
+  </text>
+  <text x="1060" y="50" font-family="JetBrains Mono, monospace" font-size="11" fill="#00D4FF" text-anchor="end" opacity="0.7">
+    @mahmudulhasan
+  </text>
+
+  <!-- stat block 1: Total Contributions -->
+  <g transform="translate(40,80)">
+    <text font-family="JetBrains Mono, monospace" font-size="11" fill="#8892B0" opacity="0.75">CONTRIBUTIONS</text>
+    <text y="36" font-family="JetBrains Mono, monospace" font-size="34" font-weight="700" fill="#00D4FF" filter="url(#csBlur)">
+      1.2k
+    </text>
+    <rect y="54" width="180" height="2" fill="url(#csAccent)" opacity="0.5"/>
+    <text y="74" font-family="JetBrains Mono, monospace" font-size="10" fill="#8892B0" opacity="0.55">last 12 months</text>
+  </g>
+
+  <!-- stat block 2: Repositories -->
+  <g transform="translate(280,80)">
+    <text font-family="JetBrains Mono, monospace" font-size="11" fill="#8892B0" opacity="0.75">REPOSITORIES</text>
+    <text y="36" font-family="JetBrains Mono, monospace" font-size="34" font-weight="700" fill="#7B2FF7" filter="url(#csBlur)">
+      28
+    </text>
+    <rect y="54" width="180" height="2" fill="url(#csAccent)" opacity="0.5"/>
+    <text y="74" font-family="JetBrains Mono, monospace" font-size="10" fill="#8892B0" opacity="0.55">public · open source</text>
+  </g>
+
+  <!-- stat block 3: Stars -->
+  <g transform="translate(520,80)">
+    <text font-family="JetBrains Mono, monospace" font-size="11" fill="#8892B0" opacity="0.75">STARS EARNED</text>
+    <text y="36" font-family="JetBrains Mono, monospace" font-size="34" font-weight="700" fill="#FF2D75" filter="url(#csBlur)">
+      64
+    </text>
+    <rect y="54" width="180" height="2" fill="url(#csAccent)" opacity="0.5"/>
+    <text y="74" font-family="JetBrains Mono, monospace" font-size="10" fill="#8892B0" opacity="0.55">across all repos</text>
+  </g>
+
+  <!-- stat block 4: Streak -->
+  <g transform="translate(760,80)">
+    <text font-family="JetBrains Mono, monospace" font-size="11" fill="#8892B0" opacity="0.75">CURRENT STREAK</text>
+    <text y="36" font-family="JetBrains Mono, monospace" font-size="34" font-weight="700" fill="#00D4FF" filter="url(#csBlur)">
+      7d
+      <animate attributeName="opacity" values="1;0.6;1" dur="2.2s" repeatCount="indefinite"/>
+    </text>
+    <rect y="54" width="180" height="2" fill="url(#csAccent)" opacity="0.5"/>
+    <text y="74" font-family="JetBrains Mono, monospace" font-size="10" fill="#8892B0" opacity="0.55">active this week</text>
+  </g>
+
+  <!-- mini bar visualization at bottom -->
+  <g transform="translate(40,180)">
+    <text font-family="JetBrains Mono, monospace" font-size="10" fill="#8892B0" opacity="0.55">7-DAY ACTIVITY</text>
+    <g transform="translate(0,12)">
+      <rect x="0"   y="14" width="22" height="14" fill="#00D4FF" opacity="0.55">
+        <animate attributeName="height" values="14;20;14" dur="2.4s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="14;8;14" dur="2.4s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="30"  y="6"  width="22" height="22" fill="#00D4FF" opacity="0.7">
+        <animate attributeName="height" values="22;28;22" dur="2.6s" begin="0.3s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="6;0;6" dur="2.6s" begin="0.3s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="60"  y="18" width="22" height="10" fill="#7B2FF7" opacity="0.65">
+        <animate attributeName="height" values="10;16;10" dur="2.8s" begin="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="18;12;18" dur="2.8s" begin="0.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="90"  y="2"  width="22" height="26" fill="#FF2D75" opacity="0.75">
+        <animate attributeName="height" values="26;32;26" dur="2.2s" begin="0.7s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="2;-4;2" dur="2.2s" begin="0.7s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="120" y="10" width="22" height="18" fill="#00D4FF" opacity="0.6">
+        <animate attributeName="height" values="18;24;18" dur="2.5s" begin="0.9s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="10;4;10" dur="2.5s" begin="0.9s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="150" y="14" width="22" height="14" fill="#7B2FF7" opacity="0.6">
+        <animate attributeName="height" values="14;20;14" dur="2.7s" begin="1.1s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="14;8;14" dur="2.7s" begin="1.1s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="180" y="6"  width="22" height="22" fill="#00D4FF" opacity="0.7">
+        <animate attributeName="height" values="22;28;22" dur="2.3s" begin="1.3s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="6;0;6" dur="2.3s" begin="1.3s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- right side: language distribution mini bars -->
+  <g transform="translate(720,180)">
+    <text font-family="JetBrains Mono, monospace" font-size="10" fill="#8892B0" opacity="0.55">TOP LANGUAGES</text>
+    <g transform="translate(0,12)" font-family="JetBrains Mono, monospace" font-size="10" fill="#8892B0">
+      <text y="10">Python</text>
+      <rect x="80" y="3"  width="180" height="8" fill="#0A0E27" stroke="#00D4FF" stroke-width="0.3" stroke-opacity="0.3"/>
+      <rect x="80" y="3"  width="140" height="8" fill="#00D4FF" opacity="0.7"/>
+      <text x="270" y="10" fill="#00D4FF">42%</text>
+
+      <text y="26">C++</text>
+      <rect x="80" y="19" width="180" height="8" fill="#0A0E27" stroke="#7B2FF7" stroke-width="0.3" stroke-opacity="0.3"/>
+      <rect x="80" y="19" width="90"  height="8" fill="#7B2FF7" opacity="0.7"/>
+      <text x="270" y="26" fill="#7B2FF7">26%</text>
+
+      <text y="42">TypeScript</text>
+      <rect x="80" y="35" width="180" height="8" fill="#0A0E27" stroke="#FF2D75" stroke-width="0.3" stroke-opacity="0.3"/>
+      <rect x="80" y="35" width="50"  height="8" fill="#FF2D75" opacity="0.7"/>
+      <text x="270" y="42" fill="#FF2D75">18%</text>
+    </g>
+  </g>
+
+  <!-- bottom accent bar -->
+  <rect x="20" y="220" width="1060" height="1" fill="url(#csAccent)" opacity="0.25"/>
+</svg>

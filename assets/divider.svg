@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 24" width="100%" height="auto" role="img" aria-label="Section divider">
+  <defs>
+    <linearGradient id="divLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#00D4FF" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#7B2FF7" stop-opacity="0.7"/>
+      <stop offset="80%" stop-color="#00D4FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="divNode" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#7B2FF7"/>
+      <stop offset="100%" stop-color="#7B2FF7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="divGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main thin gradient line -->
+  <rect x="60" y="11" width="880" height="1" fill="url(#divLine)"/>
+
+  <!-- Side small dots -->
+  <circle cx="60" cy="12" r="1.2" fill="#00D4FF" opacity="0.5"/>
+  <circle cx="940" cy="12" r="1.2" fill="#00D4FF" opacity="0.5"/>
+
+  <!-- Center node -->
+  <g filter="url(#divGlow)">
+    <circle cx="500" cy="12" r="3" fill="url(#divNode)">
+      <animate attributeName="r" values="3;4.5;3" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Center thin accent ticks -->
+  <line x1="470" y1="12" x2="485" y2="12" stroke="#00D4FF" stroke-width="0.5" opacity="0.4"/>
+  <line x1="515" y1="12" x2="530" y2="12" stroke="#7B2FF7" stroke-width="0.5" opacity="0.4"/>
+</svg>

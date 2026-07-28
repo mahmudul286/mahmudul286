@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="100%" height="auto" role="img" aria-label="Profile footer">
+  <defs>
+    <linearGradient id="fBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="50%" stop-color="#070B1F"/>
+      <stop offset="100%" stop-color="#0A0E27"/>
+    </linearGradient>
+
+    <linearGradient id="fLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7B2FF7" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="fGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="fNode" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="fHex" x="0" y="0" width="50" height="43" patternUnits="userSpaceOnUse">
+      <path d="M25 0 L50 14.5 L50 28.5 L25 43 L0 28.5 L0 14.5 Z" fill="none" stroke="#1F2547" stroke-width="0.3" opacity="0.5"/>
+    </pattern>
+
+    <filter id="fGlowF" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="160" fill="url(#fBg)"/>
+  <rect width="1200" height="160" fill="url(#fHex)" opacity="0.3"/>
+  <rect width="1200" height="160" fill="url(#fGlow)"/>
+
+  <!-- Top accent line -->
+  <rect x="100" y="18" width="1000" height="1" fill="url(#fLine)"/>
+
+  <!-- Central hex emblem -->
+  <g transform="translate(600, 80)" filter="url(#fGlowF)">
+    <!-- Outer hex -->
+    <polygon points="0,-28 24.2,-14 24.2,14 0,28 -24.2,14 -24.2,-14"
+             fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.55"/>
+    <!-- Inner hex -->
+    <polygon points="0,-18 15.6,-9 15.6,9 0,18 -15.6,9 -15.6,-9"
+             fill="none" stroke="#7B2FF7" stroke-width="0.6" opacity="0.5"/>
+    <!-- Core dot -->
+    <circle cx="0" cy="0" r="5" fill="url(#fNode)">
+      <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="2" fill="#FFFFFF" opacity="0.9">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Orbital dots -->
+    <circle cx="28" cy="0" r="1.5" fill="#00D4FF">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-28" cy="0" r="1.5" fill="#7B2FF7">
+      <animateTransform attributeName="transform" type="rotate" from="180" to="540" dur="10s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Side thin circuit traces -->
+  <g stroke="#1F2547" stroke-width="0.6" fill="none" opacity="0.7">
+    <path d="M100 80 L200 80 L220 100 L320 100"/>
+    <circle cx="220" cy="100" r="1.6" fill="#00D4FF" opacity="0.8"/>
+    <path d="M1100 80 L1000 80 L980 100 L880 100"/>
+    <circle cx="980" cy="100" r="1.6" fill="#7B2FF7" opacity="0.8"/>
+  </g>
+
+  <!-- Footer text -->
+  <g text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+    <text x="600" y="130" font-size="10" letter-spacing="6" fill="#8892B0">
+      MAHMUDUL HASAN  ·  AI &amp; ROBOTICS RESEARCH
+    </text>
+    <text x="600" y="146" font-size="8" letter-spacing="3" fill="#1F2547"
+          font-family="ui-monospace, 'SF Mono', monospace">
+      [ BUILDING AUTONOMOUS INTELLIGENCE · BANGLADESH · 2026 ]
+    </text>
+  </g>
+
+  <!-- Corner ticks -->
+  <g stroke="#00D4FF" stroke-width="0.6" fill="none" opacity="0.4">
+    <path d="M20 20 L20 35 M20 20 L35 20"/>
+    <path d="M1180 20 L1180 35 M1180 20 L1165 20"/>
+    <path d="M20 140 L20 125 M20 140 L35 140"/>
+    <path d="M1180 140 L1180 125 M1180 140 L1165 140"/>
+  </g>
+</svg>

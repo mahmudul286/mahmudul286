@@ -307,9 +307,6 @@ Python • NLP • Flask • React
 </div>
 
 <br/>
-
-</div>
-
 <p align="center"><img src="assets/data-divider.svg" width="92%" alt="divider" /></p>
 
 <!-- 08 · CONTRIBUTION GRAPH -->

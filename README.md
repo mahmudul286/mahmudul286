@@ -302,17 +302,15 @@ Python • NLP • Flask • React
 
 <div align="center">
 
-  <img
-    src="https://github-readme-stats.shion.dev/api?username=mahmudul286&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true"
-    height="170"
-    alt="GitHub Stats"
-  />
+<img
+src="https://github-readme-stats.shion.dev/api?username=mahmudul286&show_icons=true&theme=tokyonight&hide_border=true"
+height="170"
+/>
 
-  <img
-    src="https://github-readme-stats.shion.dev/api/top-langs/?username=mahmudul286&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"
-    height="170"
-    alt="Top Languages"
-  />
+<img
+src="https://github-readme-stats.shion.dev/api/top-langs/?username=mahmudul286&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"
+height="170"
+/>
 
 </div>
 
@@ -320,10 +318,9 @@ Python • NLP • Flask • React
 
 <div align="center">
 
-  <img
-    src="https://streak-stats.demolab.com?user=mahmudul286&theme=tokyonight&hide_border=true"
-    alt="GitHub Streak"
-  />
+<img
+src="https://streak-stats.demolab.com?user=mahmudul286&theme=tokyonight&hide_border=true"
+/>
 
 </div>
 

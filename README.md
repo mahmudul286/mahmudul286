@@ -141,152 +141,129 @@ Always learning. Always building.
 
 <p align="center"><img src="assets/data-divider.svg" width="92%" alt="divider" /></p>
 
-<!-- ════════════════ FEATURED PROJECTS ════════════════ -->
+<!-- 06 · FEATURED PROJECTS -->
 
 <div align="center">
 
 <h3><samp>featured_projects/</samp></h3>
 
-<br/>
-
 </div>
 
-<table width="100%">
-
+<table align="center" width="100%">
 <tr>
-<td>
 
-<img src="assets/thumb-prohory.svg" width="100%" alt="Prohory">
+<td width="50%" valign="top">
 
-<br>
+<a href="https://github.com/mahmudul286/prohory">
+<img src="assets/thumb-prohory.svg" width="100%" alt="Prohory"/>
+</a>
 
-### `Prohory`
+<br><br>
 
-AI-powered Cybersecurity Platform
+<b>Prohory</b><br>
+<sub>AI-powered Cybersecurity Platform</sub>
 
-**Stack**
+<br><br>
 
-Android • Spring Boot • React • Python • TensorFlow
+<sub><b>Stack</b></sub><br>
+<sub>Android • Spring Boot • React • TensorFlow</sub>
 
-**Status**
+<br><br>
 
-🟢 Active
+<sub><b>Status</b></sub><br>
+<sub>🟢 Active</sub>
 
-**Links**
+<br><br>
 
-🔗 <a href="https://github.com/mahmudul286/prohory">Repository</a>
-
-🌐 <a href="https://github.com/mahmudul286/prohory#readme">Documentation</a>
+<a href="https://github.com/mahmudul286/prohory">Repository ↗</a>
 
 </td>
+
+<td width="50%" valign="top">
+
+<a href="https://github.com/mahmudul286/careeros">
+<img src="assets/thumb-careeros.svg" width="100%" alt="CareerOS"/>
+</a>
+
+<br><br>
+
+<b>CareerOS</b><br>
+<sub>Career Management Platform</sub>
+
+<br><br>
+
+<sub><b>Stack</b></sub><br>
+<sub>Spring Boot • React • PostgreSQL</sub>
+
+<br><br>
+
+<sub><b>Status</b></sub><br>
+<sub>🟣 In Development</sub>
+
+<br><br>
+
+<a href="https://github.com/mahmudul286/careeros">Repository ↗</a>
+
+</td>
+
 </tr>
 
 <tr>
-<td>
 
----
+<td width="50%" valign="top">
 
-</td>
-</tr>
+<a href="https://github.com/mahmudul286/lip-reading-ai">
+<img src="assets/thumb-lipreading.svg" width="100%" alt="Lip Reading"/>
+</a>
 
-<tr>
-<td>
+<br><br>
 
-<img src="assets/thumb-careeros.svg" width="100%" alt="CareerOS">
+<b>Lip Reading AI</b><br>
+<sub>Bengali Lip Reading System</sub>
 
-<br>
+<br><br>
 
-### `CareerOS`
+<sub><b>Stack</b></sub><br>
+<sub>Python • PyTorch • OpenCV</sub>
 
-Career Management Platform
+<br><br>
 
-**Stack**
+<sub><b>Status</b></sub><br>
+<sub>🔵 Research</sub>
 
-Spring Boot • React • PostgreSQL
+<br><br>
 
-**Status**
-
-🟣 In Development
-
-**Links**
-
-🔗 <a href="https://github.com/mahmudul286/careeros">Repository</a>
-
-🌐 <a href="https://github.com/mahmudul286/careeros#readme">Documentation</a>
+<a href="https://github.com/mahmudul286/lip-reading-ai">Repository ↗</a>
 
 </td>
-</tr>
 
-<tr>
-<td>
+<td width="50%" valign="top">
 
----
+<a href="https://github.com/mahmudul286/medical-bot">
+<img src="assets/thumb-medicalbot.svg" width="100%" alt="Medical Bot"/>
+</a>
 
-</td>
-</tr>
+<br><br>
 
-<tr>
-<td>
+<b>Medical Bot</b><br>
+<sub>Conversational Medical Assistant</sub>
 
-<img src="assets/thumb-lipreading.svg" width="100%" alt="Lip Reading AI">
+<br><br>
 
-<br>
+<sub><b>Stack</b></sub><br>
+<sub>Python • NLP • Flask • React</sub>
 
-### `Lip Reading AI`
+<br><br>
 
-Deep Learning Bengali Lip Reading System
+<sub><b>Status</b></sub><br>
+<sub>⚪ Archived</sub>
 
-**Stack**
+<br><br>
 
-Python • PyTorch • OpenCV
-
-**Status**
-
-🔵 Research Ongoing
-
-**Links**
-
-🔗 <a href="https://github.com/mahmudul286/lip-reading-ai">Repository</a>
-
-🌐 <a href="https://github.com/mahmudul286/lip-reading-ai#readme">Documentation</a>
+<a href="https://github.com/mahmudul286/medical-bot">Repository ↗</a>
 
 </td>
-</tr>
 
-<tr>
-<td>
-
----
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-<img src="assets/thumb-medicalbot.svg" width="100%" alt="Medical Bot">
-
-<br>
-
-### `Medical Bot`
-
-Conversational Medical Assistant
-
-**Stack**
-
-Python • NLP • Flask • React
-
-**Status**
-
-⚪ Archived
-
-**Links**
-
-🔗 <a href="https://github.com/mahmudul286/medical-bot">Repository</a>
-
-🌐 <a href="https://github.com/mahmudul286/medical-bot#readme">Documentation</a>
-
-</td>
 </tr>
 
 </table>

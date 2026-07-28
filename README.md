@@ -141,68 +141,78 @@ Always learning. Always building.
 
 <p align="center"><img src="assets/data-divider.svg" width="92%" alt="divider" /></p>
 
-<!-- 06 · FEATURED PROJECTS -->
+<!-- ════════════════ FEATURED PROJECTS ════════════════ -->
 
 <div align="center">
 
-<h3><samp>featured_projects/</samp></h3>
+<h3><code>featured_projects/</code></h3>
 
-</div>
+<br>
 
-<table align="center" width="100%">
+<table width="100%">
 <tr>
 
 <td width="50%" valign="top">
 
 <a href="https://github.com/mahmudul286/prohory">
-<img src="assets/thumb-prohory.svg" width="100%" alt="Prohory"/>
+<img src="assets/thumb-prohory.svg" width="100%" alt="Prohory">
 </a>
 
 <br><br>
 
-<b>Prohory</b><br>
-<sub>AI-powered Cybersecurity Platform</sub>
+<h3>🛡️ Prohory</h3>
+
+AI-powered Cybersecurity Platform
 
 <br><br>
 
-<sub><b>Stack</b></sub><br>
-<sub>Android • Spring Boot • React • TensorFlow</sub>
+<b>Stack</b><br>
+
+Android • Spring Boot • React • TensorFlow
 
 <br><br>
 
-<sub><b>Status</b></sub><br>
-<sub>🟢 Active</sub>
+<b>Status</b><br>
+
+🟢 Active
 
 <br><br>
 
-<a href="https://github.com/mahmudul286/prohory">Repository ↗</a>
+<a href="https://github.com/mahmudul286/prohory">
+<b>Repository ↗</b>
+</a>
 
 </td>
 
 <td width="50%" valign="top">
 
 <a href="https://github.com/mahmudul286/careeros">
-<img src="assets/thumb-careeros.svg" width="100%" alt="CareerOS"/>
+<img src="assets/thumb-careeros.svg" width="100%" alt="CareerOS">
 </a>
 
 <br><br>
 
-<b>CareerOS</b><br>
-<sub>Career Management Platform</sub>
+<h3>💼 CareerOS</h3>
+
+Career Management Platform
 
 <br><br>
 
-<sub><b>Stack</b></sub><br>
-<sub>Spring Boot • React • PostgreSQL</sub>
+<b>Stack</b><br>
+
+Spring Boot • React • PostgreSQL
 
 <br><br>
 
-<sub><b>Status</b></sub><br>
-<sub>🟣 In Development</sub>
+<b>Status</b><br>
+
+🟣 In Development
 
 <br><br>
 
-<a href="https://github.com/mahmudul286/careeros">Repository ↗</a>
+<a href="https://github.com/mahmudul286/careeros">
+<b>Repository ↗</b>
+</a>
 
 </td>
 
@@ -212,61 +222,77 @@ Always learning. Always building.
 
 <td width="50%" valign="top">
 
+<br>
+
 <a href="https://github.com/mahmudul286/lip-reading-ai">
-<img src="assets/thumb-lipreading.svg" width="100%" alt="Lip Reading"/>
+<img src="assets/thumb-lipreading.svg" width="100%" alt="Lip Reading AI">
 </a>
 
 <br><br>
 
-<b>Lip Reading AI</b><br>
-<sub>Bengali Lip Reading System</sub>
+<h3>👄 Lip Reading AI</h3>
+
+Bengali Lip Reading System
 
 <br><br>
 
-<sub><b>Stack</b></sub><br>
-<sub>Python • PyTorch • OpenCV</sub>
+<b>Stack</b><br>
+
+Python • PyTorch • OpenCV
 
 <br><br>
 
-<sub><b>Status</b></sub><br>
-<sub>🔵 Research</sub>
+<b>Status</b><br>
+
+🔵 Research
 
 <br><br>
 
-<a href="https://github.com/mahmudul286/lip-reading-ai">Repository ↗</a>
+<a href="https://github.com/mahmudul286/lip-reading-ai">
+<b>Repository ↗</b>
+</a>
 
 </td>
 
 <td width="50%" valign="top">
 
+<br>
+
 <a href="https://github.com/mahmudul286/medical-bot">
-<img src="assets/thumb-medicalbot.svg" width="100%" alt="Medical Bot"/>
+<img src="assets/thumb-medicalbot.svg" width="100%" alt="Medical Bot">
 </a>
 
 <br><br>
 
-<b>Medical Bot</b><br>
-<sub>Conversational Medical Assistant</sub>
+<h3>🩺 Medical Bot</h3>
+
+Conversational Medical Assistant
 
 <br><br>
 
-<sub><b>Stack</b></sub><br>
-<sub>Python • NLP • Flask • React</sub>
+<b>Stack</b><br>
+
+Python • NLP • Flask • React
 
 <br><br>
 
-<sub><b>Status</b></sub><br>
-<sub>⚪ Archived</sub>
+<b>Status</b><br>
+
+⚪ Archived
 
 <br><br>
 
-<a href="https://github.com/mahmudul286/medical-bot">Repository ↗</a>
+<a href="https://github.com/mahmudul286/medical-bot">
+<b>Repository ↗</b>
+</a>
 
 </td>
 
 </tr>
 
 </table>
+
+</div>
 
 <p align="center"><img src="assets/data-divider.svg" width="92%" alt="divider" /></p>
 

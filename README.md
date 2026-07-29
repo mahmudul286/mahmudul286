@@ -378,14 +378,14 @@ src="https://streak-stats.demolab.com?user=mahmudul286&theme=tokyonight&hide_bor
       <br/><sub><b>LeetCode</b></sub>
     </td>
     <td align="center" width="140">
-      <a href="https://codeforces.com/profile/mahmudul286">
+      <a href="https://codeforces.com/profile/The_Loop_Hole">
         <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/codeforces.svg" width="34" height="34" style="filter: invert(0.7);" alt="Codeforces"/>
       </a>
       <br/><sub><b>Codeforces</b></sub>
     </td>
     <td align="center" width="140">
-      <a href="https://judge.beecrowd.com/en/profile/mahmudul286">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/beecrowd.svg" width="34" height="34" style="filter: invert(0.7);" alt="BeeCrowd"/>
+      <a href="https://www.codechef.com/users/the_loop_hole">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/beecrowd.svg" width="34" height="34" style="filter: invert(0.7);" alt="CodeCheif"/>
       </a>
       <br/><sub><b>BeeCrowd</b></sub>
     </td>
@@ -394,6 +394,13 @@ src="https://streak-stats.demolab.com?user=mahmudul286&theme=tokyonight&hide_bor
 
 <br/>
 
+</div>
+
+
+
+<p align="center"><img src="assets/data-divider.svg" width="92%" alt="divider" /></p>
+<div data-importer="profile-views" align="center">
+  <img data-importer="profile-views" src="https://visitor-badge.laobi.icu/badge?page_id=mahmudul286.mahmudul286&"  />
 </div>
 
 <p align="center"><img src="assets/data-divider.svg" width="92%" alt="divider" /></p>
